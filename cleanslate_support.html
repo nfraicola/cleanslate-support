@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CleanSlate Support</title>
+  <meta name="description" content="CleanSlate Support — FAQs, troubleshooting, and ways to contact us.">
+  <meta property="og:title" content="CleanSlate Support">
+  <meta property="og:description" content="CleanSlate Support — FAQs, troubleshooting, and ways to contact us.">
+  <meta property="og:type" content="website">
+  <style>
+    :root{
+      --bg:#ffffff;
+      --fg:#0f172a;
+      --muted:#475569;
+      --card:#f8fafc;
+      --accent:#0ea5e9;
+      --border:#e2e8f0;
+    }
+    @media (prefers-color-scheme: dark){
+      :root{
+        --bg:#0b1020;
+        --fg:#e5edf9;
+        --muted:#a8b3cf;
+        --card:#0f1530;
+        --accent:#38bdf8;
+        --border:#1f2945;
+      }
+    }
+    html,body{height:100%;}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      background:var(--bg);
+      color:var(--fg);
+      line-height:1.6;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+    .container{
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 48px 20px 80px;
+    }
+    header{
+      margin-bottom:32px;
+      padding-bottom:24px;
+      border-bottom:1px solid var(--border);
+    }
+    h1{font-size: clamp(28px, 4vw, 40px); margin:0 0 8px;}
+    .subtitle{color:var(--muted); margin:0;}
+    .badge{
+      display:inline-block;
+      font-size:12px;
+      padding:4px 10px;
+      border:1px solid var(--border);
+      border-radius:999px;
+      color:var(--muted);
+      margin-top:10px;
+    }
+    nav{
+      background:var(--card);
+      border:1px solid var(--border);
+      border-radius:16px;
+      padding:16px;
+      margin:24px 0 32px;
+    }
+    nav .title{font-weight:600; margin:0 0 8px; font-size:14px; color:var(--muted);}
+    nav ul{display:grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap:8px 16px; padding:0; margin:0; list-style:none;}
+    nav a{color:var(--accent); text-decoration:none;}
+    nav a:hover{text-decoration:underline;}
+    section{padding:24px 0; border-bottom:1px solid var(--border);}
+    h2{font-size: clamp(20px, 3vw, 26px); margin:0 0 8px;}
+    p, li{font-size:16px; color:var(--fg);}
+    .muted{color:var(--muted);}
+    .card{background:var(--card); border:1px solid var(--border); border-radius:14px; padding:16px;}
+    .small{font-size:13px;}
+    a{color:var(--accent)}
+    .btn{
+      display:inline-block;
+      padding:10px 14px;
+      border-radius:12px;
+      border:1px solid var(--border);
+      text-decoration:none;
+      color:var(--fg);
+      background:var(--card);
+    }
+    .btn:hover{border-color:var(--accent);}
+    details{background:var(--card); border:1px solid var(--border); border-radius:12px; padding:14px 16px; margin:10px 0;}
+    details summary{cursor:pointer; font-weight:600;}
+    .grid{display:grid; gap:16px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));}
+    footer{padding-top:24px; color:var(--muted);}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>CleanSlate Support</h1>
+      <p class="subtitle">FAQs, troubleshooting, and ways to contact us</p>
+      <div class="badge">We're here to help</div>
+    </header>
+
+    <nav aria-label="Quick links" class="card">
+      <p class="title">Jump to</p>
+      <ul>
+        <li><a href="#getting-started">Getting Started</a></li>
+        <li><a href="#linking-accounts">Linking &amp; Unlinking Accounts (Plaid)</a></li>
+        <li><a href="#privacy-data">Privacy &amp; Data</a></li>
+        <li><a href="#troubleshooting">Troubleshooting</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section id="getting-started">
+        <h2>1) Getting Started</h2>
+        <details>
+          <summary>How do I create an account?</summary>
+          <p>Download the CleanSlate iOS app and sign up with your email. Verify your email to finish setup.</p>
+        </details>
+        <details>
+          <summary>What devices are supported?</summary>
+          <p>iPhone running the iOS version listed on our App Store page. We aim to support the latest two iOS releases.</p>
+        </details>
+      </section>
+
+      <section id="linking-accounts">
+        <h2>2) Linking &amp; Unlinking Accounts (Plaid)</h2>
+        <details>
+          <summary>How do I link a credit card or bank account?</summary>
+          <p>In the app, go to <em>Accounts &rarr; Link account</em>. We securely connect using Plaid, a trusted third‑party provider. We never see or store your banking credentials.</p>
+        </details>
+        <details>
+          <summary>How do I unlink an account?</summary>
+          <p>In the app, open the linked account and choose <em>Unlink</em>. You can also revoke access from your bank’s settings (look for “Connected Apps”).</p>
+        </details>
+        <details>
+          <summary>What data does CleanSlate access?</summary>
+          <p>Read‑only data such as account name/type, masked identifiers, balances, and transactions (amount, date, merchant, category) to display insights.</p>
+        </details>
+      </section>
+
+      <section id="privacy-data">
+        <h2>3) Privacy &amp; Data</h2>
+        <details>
+          <summary>Do you store my bank login or full card numbers?</summary>
+          <p>No. We do not receive or store your banking credentials. Connections are handled by Plaid.</p>
+        </details>
+        <details>
+          <summary>Can I request a copy or deletion of my data?</summary>
+          <p>Yes. Email us at <a href="mailto:privacy@cleanslate.app">privacy@cleanslate.app</a> with your request from the email associated with your account.</p>
+        </details>
+        <p class="small muted">See our <a href="/privacy">Privacy Policy</a> for full details.</p>
+      </section>
+
+      <section id="troubleshooting">
+        <h2>4) Troubleshooting</h2>
+        <div class="grid">
+          <div class="card">
+            <h3 class="muted">Sync issues</h3>
+            <ul>
+              <li>Pull to refresh on the Accounts screen.</li>
+              <li>Confirm your bank isn’t blocking third‑party access.</li>
+              <li>Unlink and re‑link the account if needed.</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3 class="muted">App crashes or freezes</h3>
+            <ul>
+              <li>Update to the latest iOS and app version.</li>
+              <li>Force close and reopen the app.</li>
+              <li>Reboot your device.</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3 class="muted">Wrong or missing transactions</h3>
+            <ul>
+              <li>Wait a few minutes—banks sometimes delay updates.</li>
+              <li>Try refresh; if still missing, unlink/re‑link.</li>
+              <li>Contact us with the merchant name, amount, and date.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>5) Contact</h2>
+        <div class="card">
+          <p><strong>Email support:</strong> <a class="btn" href="mailto:support@cleanslate.app?subject=Support%20Request%20-%20CleanSlate">Open Email</a></p>
+          <p><strong>Security issues:</strong> <a href="mailto:security@cleanslate.app?subject=Security%20Report%20-%20CleanSlate">security@cleanslate.app</a></p>
+          <p class="muted small">Typical response time: within 2 business days.</p>
+        </div>
+        <p class="small muted">Prefer a form? You can connect a static form service (e.g., Formspree) later and replace the mailto link above.</p>
+      </section>
+    </main>
+
+    <footer class="small">
+      <p>&copy; 2025 CleanSlate. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>
